@@ -3,112 +3,89 @@
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2 {
+  margin-top: 0;
 }
 
 /* || VARIABLES */
 
 :root {
-  /* Font size */
-  --fs-1: 1rem;
-  --fs-2: 1.333rem;
-  --fs-3: 1.777rem;
-  --fs-4: 2.369rem;
-  --fs-5: 3.157rem;
-
-  /* Colors */
-  --neutral-50: #fafafa;
-  --neutral-100: #f3f4f6;
-  --neutral-950: #0a0a0a;
-  --primary-600: #9333ea;
-  --primary-700: #7e22ce;
+  --fs-1: 1.15rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.75rem;
 }
 
-/* || GLOBAL STYLE */
+/* || GENERAL STYLING */
 
 body {
-  font-family: "Atkinson Hyperlegible", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: var(--fs-1);
 }
+
+/* || UTILITIES */
 
 .wrapper {
   padding: 0 16px;
-  max-width: 900px;
 }
 
-/* || HEADER */
+/* || HEADER (left col on desktop) */
 
 .header {
-  background: black url(../imgs/toni-tan-4svRPgAMT8s-unsplash.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0;
+  background-image: url(../imgs/toni-tan-4svRPgAMT8s-unsplash.jpg);
+  padding: 24px;
 }
 
-.header__wrapper {
-  --bg: rgb(10, 10, 10, 0.6);
-  background-color: var(--bg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em 4em;
-  width: 100%;
+.header__logoDiv {
+  background: #000;
+  opacity: 0.4;
+  color: white;
 }
 
 .header__logo {
-  max-width: 80px;
+  width: 150px;
 }
 
-.header__title {
-  font-size: var(--fs-5);
-  color: var(--neutral-50);
-  text-transform: uppercase;
-  font-weight: 700;
+/* || MAIN (right col on desktop */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* || MAIN */
-
-.main__title {
+.main__text {
   font-size: var(--fs-2);
 }
 
-/* -- form */
-
-.form__wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+.wrapper-form {
+  background-color: antiquewhite;
+  padding: 32px 16px;
 }
 
-.form__inputGroup {
-  display: inline;
+.button {
+  padding: 1em 2em;
+  display: inline-block;
 }
 
-.form__inputGroup input {
-  width: 100%;
-}
+/* || MEDIA QUERY*/
 
-label {
-  display: block;
-}
-
-/* || MEDIA QUERY */
-
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   body {
     flex-direction: row;
   }
 
-  .header {
-    width: 40%;
-  }
-
-  .form__wrapper {
-    grid-template-columns: 1fr 1fr;
+  .wrapper {
+    padding: 24px 48px;
   }
 }
