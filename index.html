@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -12,64 +18,75 @@
       <div class="header__logoDiv">
         <img src="imgs/odin-lined.png" alt="logo" class="header__logo" />
         <h1>odin</h1>
+        <p class="header__photoCredits">
+          Picture by <a href="https://unsplash.com/@tonitan">Tony Tan</a> on
+          <a href="https://unsplash.com">Unsplash</a>
+        </p>
       </div>
     </header>
     <main>
       <section>
-        <div class="wrapper main__text">
-          <p>
-            This is not a real online service! You know you need something like
-            this in you rlife to help you realize your deepest dreams. Sign up
-            <em>now</em> to get started.
-          </p>
-          <p>You <em>know</em> you want to</p>
+        <div class="main__text">
+          <div class="max-width">
+            <p>
+              This is not a real online service! You know you need something
+              like this in you life to help you realize your deepest dreams.
+              Sign up
+              <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to</p>
+          </div>
         </div>
       </section>
 
       <section>
-        <div class="wrapper wrapper-form">
-          <h2>Let's do this!</h2>
+        <div class="wrapper-form">
+          <div class="max-width">
+            <h2>Let's do this!</h2>
 
-          <form action="#" method="post" class="form" id="my_form">
-            <div class="form__inputGroup">
-              <label for="">first name</label>
-              <input type="text" />
-            </div>
+            <form action="#" method="post" class="form" id="my_form">
+              <div class="form__inputGroup">
+                <label for="">first name</label>
+                <input type="text" />
+              </div>
 
-            <div class="form__inputGroup">
-              <label for="">last name</label>
-              <input type="text" />
-            </div>
+              <div class="form__inputGroup">
+                <label for="">last name</label>
+                <input type="text" />
+              </div>
 
-            <div class="form__inputGroup">
-              <label for="">email</label>
-              <input type="text" />
-            </div>
+              <div class="form__inputGroup">
+                <label for="">email</label>
+                <input type="text" />
+              </div>
 
-            <div class="form__inputGroup">
-              <label for="">phone number</label>
-              <input type="text" />
-            </div>
+              <div class="form__inputGroup">
+                <label for="">phone number</label>
+                <input type="text" />
+              </div>
 
-            <div class="form__inputGroup">
-              <label for="">password</label>
-              <input type="text" />
-            </div>
+              <div class="form__inputGroup">
+                <label for="">password</label>
+                <input type="text" />
+              </div>
 
-            <div class="form__inputGroup">
-              <label for="">confirm password</label>
-              <input type="text" />
-            </div>
-          </form>
+              <div class="form__inputGroup">
+                <label for="">confirm password</label>
+                <input type="text" />
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
       <section>
-        <div class="wrapper">
+        <div class="max-width">
           <button class="button" type="submit" form="my_form">
             create account
           </button>
-          <p>Already have an account? <a href="#">Log in</a></p>
+          <p>
+            Already have an account? <a href="#" class="logIn__text">Log in</a>
+          </p>
         </div>
       </section>
     </main>
