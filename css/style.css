@@ -1,0 +1,114 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* Font size */
+  --fs-1: 1rem;
+  --fs-2: 1.333rem;
+  --fs-3: 1.777rem;
+  --fs-4: 2.369rem;
+  --fs-5: 3.157rem;
+
+  /* Colors */
+  --neutral-50: #fafafa;
+  --neutral-100: #f3f4f6;
+  --neutral-950: #0a0a0a;
+  --primary-600: #9333ea;
+  --primary-700: #7e22ce;
+}
+
+/* || GLOBAL STYLE */
+
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding: 0 16px;
+  max-width: 900px;
+}
+
+/* || HEADER */
+
+.header {
+  background: black url(../imgs/toni-tan-4svRPgAMT8s-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.header__wrapper {
+  --bg: rgb(10, 10, 10, 0.6);
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 4em;
+  width: 100%;
+}
+
+.header__logo {
+  max-width: 80px;
+}
+
+.header__title {
+  font-size: var(--fs-5);
+  color: var(--neutral-50);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* || MAIN */
+
+.main__title {
+  font-size: var(--fs-2);
+}
+
+/* -- form */
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.form__inputGroup {
+  display: inline;
+}
+
+.form__inputGroup input {
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+/* || MEDIA QUERY */
+
+@media (min-width: 750px) {
+  body {
+    flex-direction: row;
+  }
+
+  .header {
+    width: 40%;
+  }
+
+  .form__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

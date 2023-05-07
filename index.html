@@ -5,7 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <img
+          src="imgs/odin-lined.png"
+          alt="The Odin Project logo"
+          class="header__logo"
+        />
+        <h1 class="header__title">odin</h1>
+      </div>
+    </header>
+    <main>
+      <article class="wrapper">
+        <header>
+          <p class="main__title">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </header>
+        <section>
+          <form action="">
+            <div class="form__wrapper">
+              <div class="form__inputGroup">
+                <label for="">first name</label>
+                <input type="text" />
+              </div>
+
+              <div class="form__inputGroup">
+                <label for="">last name</label>
+                <input type="text" />
+              </div>
+
+              <div class="form__inputGroup">
+                <label for="">email</label>
+                <input type="email" />
+              </div>
+
+              <div class="form__inputGroup">
+                <label for="">phone number</label>
+                <input type="tel" />
+              </div>
+
+              <div class="form__inputGroup">
+                <label for="">password</label>
+                <input type="password" />
+              </div>
+
+              <div class="form__inputGroup">
+                <label for="">confirm password</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <button type="submit">create account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- https://unsplash.com/@tonitan -->
+    <!-- https://unsplash.com/photos/4svRPgAMT8s -->
+  </body>
 </html>
