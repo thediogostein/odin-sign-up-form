@@ -47,32 +47,45 @@
             <form action="#" method="post" class="form" id="my_form">
               <div class="form__inputGroup">
                 <label for="fname">first name</label>
-                <input type="text" id="fname" name="fname" required />
+                <input type="text" id="fname" name="fname" />
               </div>
 
               <div class="form__inputGroup">
                 <label for="lname">last name</label>
-                <input type="text" id="lname" required />
+                <input type="text" id="lname" name="lname" />
               </div>
 
               <div class="form__inputGroup">
                 <label for="email">email</label>
-                <input type="email" id="email" required />
+                <input type="email" id="email" name="email" required />
               </div>
 
               <div class="form__inputGroup">
                 <label for="phoneNumber">phone number</label>
-                <input type="tel" id="phoneNumber" required />
+                <input type="tel" id="phoneNumber" name="phoneNumber" />
               </div>
 
               <div class="form__inputGroup">
                 <label for="passwd">password</label>
-                <input type="password" id="passwd" required />
+                <input
+                  type="password"
+                  id="passwd"
+                  name="password"
+                  class="password"
+                  required
+                />
+                <div id="error"></div>
               </div>
 
               <div class="form__inputGroup">
-                <label for="confirmPasswd">confirm password</label>
-                <input type="password" id="confirmPasswd" required />
+                <label for="password2">confirm password</label>
+                <input
+                  type="password"
+                  id="password2"
+                  class="password"
+                  name="password2"
+                  required
+                />
               </div>
             </form>
           </div>
@@ -81,7 +94,7 @@
 
       <section>
         <div class="max-width">
-          <button class="button" type="submit" form="my_form">
+          <button class="button" type="submit" form="my_form" id="btn">
             create account
           </button>
           <p>
@@ -90,5 +103,7 @@
         </div>
       </section>
     </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

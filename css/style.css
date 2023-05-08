@@ -156,6 +156,10 @@ input:focus {
   outline: none;
   border: 3px solid var(--violet-800);
 }
+/* Adds class if passwords don't match */
+.error {
+  border: 3px solid var(--rose-600);
+}
 
 .button {
   padding: 1em 2em;
